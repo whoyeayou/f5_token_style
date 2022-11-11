@@ -1,0 +1,118 @@
+$darkgrey: #7E8288;
+
+.f5-widget {
+
+    &-footer {
+        color: #231F20;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        box-sizing: border-box;
+
+    &__text {
+        color: #231F20;
+        line-height: 134%;
+        max-height: 20px;
+    }
+
+    &__info {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        &_inner {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        &.alt {
+            flex-direction: row;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__a{
+        color: #231F20;
+        text-decoration: none;
+        opacity: .8;
+        max-height: 20px;
+        
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        white-space: nowrap;
+
+        &:hover {
+            opacity: 1;
+        }
+        &.alt:hover {
+            opacity: .8;
+            text-decoration: underline;
+        }
+    }
+
+    &__logo {
+        color: #231F20;
+        max-height: 20px;
+    }
+
+    &__top {
+        display: inline-flex;
+    }
+
+    &__line {
+        position: absolute;
+        height: 1px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+
+        background: linear-gradient(90deg, #231F20 0%, rgba(35, 31, 32, 0) 100%);
+        opacity: 0.1;   
+    }
+
+    &__helper {
+        cursor: default;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 135%;
+
+        text-align: center;
+
+        color: #231F20;
+
+        opacity: 0.6;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    &.alt {
+        position: relative;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        padding: 15px;
+    }
+    }
+}
